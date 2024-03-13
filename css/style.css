@@ -15,21 +15,168 @@ body {
     align-items: center;
 }
 
+.container-flex {
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-left: 80px;
+    
+}
+
+.box-container {
+    padding: 50px 0;
+    margin-left: 200px;
+}
+
 /*****HEADER*****/
 
 header {
     background-color: orangered;
-    max-width: 100%;
+    width: 100%;
     height: 5rem;
     color: white;
     padding: 1rem;
+    position: fixed;
+    z-index: 1;
 
 }
 
 .imgLogo{
    width: 10rem;
    padding-top: 0.5rem;
+}
 
+/****MAIN*****/
+.card {
+    width: 300px;
+}
 
+div.foto {
+    position: relative;
+}
 
+.foto1{
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    padding-top: 5rem;
+}
+
+.foto2 {
+    width: 300px;
+    display: block;
+    padding-top: 5rem;
+}
+
+img.foto1:hover {
+    opacity: 1;
+    transition: opacity 0.4s linear;
+}
+
+.heart {
+    position: relative;
+    left: 270px;
+    top: -420px;
+}
+
+.dettagli {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    color: white;
+    display: inline-block;
+}
+
+.red {
+    background-color: red;
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    left: 280px;
+    top: -150px;
+}
+
+.green {    
+    background-color: rgb(91, 163, 36);
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+    left: 280px;
+    top: -150px;
+}
+
+.price {
+    text-decoration: line-through;
+}
+
+.sale {
+    color: red;
+}
+
+.heart:hover {
+    color: red;
+}
+
+.red2 {
+    background-color: red;
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    left: 600px;
+    top: -150px;
+}
+
+.red3 {
+    background-color: red;
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    left: 920px;
+    top: -150px;
+}
+
+.red4 {
+    background-color: red;
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    left: 280px;
+    top: 470px;
+}
+
+.green1 {    
+    background-color: rgb(91, 163, 36);
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+    left: 280px;
+    top: 470px;
+}
+
+.green2 {    
+    background-color: rgb(91, 163, 36);
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+    left: 920px;
+    top: 470px;
+}
+
+/********FOOTER******/
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 5rem;
+    color: white;
+}
+
+.foot {
+    text-align: center;
+    padding-top: 1rem;
 }
